@@ -16,8 +16,9 @@ public void myFractal(int x, int y, int siz){
     ellipse(x - siz/6, y + siz/4, siz/10, siz/5);
     ellipse(x + siz/6, y + siz/4, siz/10, siz/5);
   if(siz > 10){
-      myFractal(x, y, siz/2);
-     //myFractal(x, y - siz/2, siz/2);
-    //myFractal(x, y + siz/2, siz/2);
+    myFractal(x, y - siz/2, siz/2);
+    myFractal(x, y + siz/2, siz/2);
+    myFractal(x + siz/2, y, siz/2);
+    myFractal(x - siz/2, y, siz/2);
   }
 }
